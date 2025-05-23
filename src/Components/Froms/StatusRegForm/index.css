@@ -1,0 +1,42 @@
+/* Override the background color of the color picker panel */
+.ant-picker-color .ant-picker-color-panel {
+  background-color: #f5f5f5;
+}
+.ant-color-picker-color-block {
+  width: 100%;
+}
+/* Change the font color of the color picker panel */
+.ant-picker-color .ant-picker-color-panel .ant-picker-color-pre-colors {
+  color: #333;
+}
+
+/* Adjust the size of the color swatch */
+.ant-picker-color .ant-picker-color-panel .ant-picker-color-content {
+  width: 24px;
+  height: 24px;
+}
+
+/* Change the border radius of the color swatch */
+.ant-picker-color
+  .ant-picker-color-panel
+  .ant-picker-color-content
+  .ant-picker-color-cell {
+  border-radius: 50%;
+}
+
+/* Adjust the size of the color picker indicator */
+.ant-picker-color .ant-picker-color-panel .ant-picker-color-slider {
+  width: 20px;
+}
+
+/* Change the color of the color picker indicator */
+.ant-picker-color .ant-picker-color-panel .ant-picker-color-slider-thumb {
+  background-color: #333;
+}
+
+/* Customize the color picker confirm button */
+.ant-picker-color .ant-picker-color-panel .ant-picker-footer .ant-btn-primary {
+  background-color: #333;
+  border-color: #333;
+  color: #fff;
+}

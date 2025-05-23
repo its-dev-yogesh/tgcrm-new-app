@@ -1,0 +1,20 @@
+.ant-picker-panel-container {
+  position: relative;
+  margin-left: 10px;
+}
+.ant-picker-range-wrapper,
+.ant-picker-date-range-wrapper {
+  left: 7%;
+  width: 100%;
+  padding: 10px;
+}
+.ant-picker-panel-layout {
+  width: 100%;
+}
+.ant-picker-presets {
+  width: 20px;
+  font-size: 16px;
+}
+.ant-picker-header-view {
+  width: fit-content;
+}
