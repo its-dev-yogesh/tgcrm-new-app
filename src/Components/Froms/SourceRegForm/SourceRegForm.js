@@ -95,7 +95,7 @@ const SourceRegForm = () => {
     try {
       setisReg(true);
 
-      const response = await fetch("https://tgcrm-new-api.vercel.app//source", {
+      const response = await fetch("https://tgcrm-new-api.vercel.app/source", {
         method: "POST",
         body: JSON.stringify(lowercaseObject),
         headers: {

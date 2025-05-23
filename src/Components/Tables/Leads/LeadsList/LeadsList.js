@@ -478,7 +478,7 @@ const LeadsList = () => {
     let lowercaseArr = convertObjectValuesToLowercase(actionData);
     try {
       const response = await fetch(
-        "https://tgcrm-new-api.vercel.app//update-action-leads",
+        "https://tgcrm-new-api.vercel.app/update-action-leads",
         {
           method: "POST",
           body: JSON.stringify(lowercaseArr),
@@ -1334,14 +1334,14 @@ const LeadsList = () => {
       try {
         setisTask(true);
         const response = await axios.post(
-          "https://tgcrm-new-api.vercel.app//assign-leads",
+          "https://tgcrm-new-api.vercel.app/assign-leads",
           newAssign
         );
 
         if (response.data) {
           try {
             const leadResponse = await axios.post(
-              "https://tgcrm-new-api.vercel.app//update-leads",
+              "https://tgcrm-new-api.vercel.app/update-leads",
               newAssign
             );
             if (leadResponse) {
@@ -1386,7 +1386,7 @@ const LeadsList = () => {
   //         documentId: item._id,
   //       };
   //       const response = await fetch(
-  //         `https://tgcrm-new-api.vercel.app//deleteLeads`,
+  //         `https://tgcrm-new-api.vercel.app/deleteLeads`,
   //         {
   //           method: "POST",
   //           body: JSON.stringify(deleteleads),
@@ -1415,7 +1415,7 @@ const LeadsList = () => {
       };
       setisTask(true);
 
-      const response = await fetch(`https://tgcrm-new-api.vercel.app//delete-many`, {
+      const response = await fetch(`https://tgcrm-new-api.vercel.app/delete-many`, {
         method: "DELETE",
         body: JSON.stringify(deleteleads),
         headers: {

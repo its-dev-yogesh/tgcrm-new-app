@@ -51,7 +51,7 @@ const CourseRegForm = () => {
     try {
       setisReg(true);
 
-      const response = await fetch("https://tgcrm-new-api.vercel.app//course", {
+      const response = await fetch("https://tgcrm-new-api.vercel.app/course", {
         method: "POST",
         body: JSON.stringify(lowercaseObject),
         headers: {

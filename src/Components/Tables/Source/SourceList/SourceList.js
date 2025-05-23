@@ -266,7 +266,7 @@ const SourceList = () => {
       const deleteStatus = {
         documentId: Data_Key,
       }; // eslint-disable-next-line
-      const response = await fetch(`https://tgcrm-new-api.vercel.app//delete-source`, {
+      const response = await fetch(`https://tgcrm-new-api.vercel.app/delete-source`, {
         method: "POST",
         body: JSON.stringify(deleteStatus),
         headers: {
