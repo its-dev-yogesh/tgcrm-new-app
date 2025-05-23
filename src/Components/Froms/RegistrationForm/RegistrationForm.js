@@ -223,7 +223,7 @@ const RegistrationForm = () => {
     lowercaseObject.password = toCamelCase(lowercaseObject.password);
     try {
       setisReg(true);
-      const response = await fetch("https://tgcrm.vercel.app/member", {
+      const response = await fetch("https://tgcrm-new-api.vercel.app//member", {
         method: "POST",
         body: JSON.stringify(lowercaseObject),
         headers: {

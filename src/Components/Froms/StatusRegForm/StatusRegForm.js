@@ -118,7 +118,7 @@ const StatusRegForm = () => {
     try {
       setisReg(true);
 
-      const response = await fetch("https://tgcrm.vercel.app/status", {
+      const response = await fetch("https://tgcrm-new-api.vercel.app//status", {
         method: "POST",
         body: JSON.stringify(lowercaseObject),
         headers: {

@@ -102,7 +102,7 @@ const LeadImportForm = () => {
     try {
       setisReg(true);
 
-      const response = await fetch("https://tgcrm.vercel.app/leads", {
+      const response = await fetch("https://tgcrm-new-api.vercel.app//leads", {
         method: "POST",
         body: JSON.stringify(lowercaseArr),
         headers: {

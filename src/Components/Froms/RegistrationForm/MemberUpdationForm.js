@@ -244,7 +244,7 @@ const MemberUpdationForm = (props) => {
     try {
       setisReg(true);
 
-      const response = await fetch("https://tgcrm.vercel.app/update-member", {
+      const response = await fetch("https://tgcrm-new-api.vercel.app//update-member", {
         method: "POST",
         body: JSON.stringify(lowercaseObject),
         headers: {

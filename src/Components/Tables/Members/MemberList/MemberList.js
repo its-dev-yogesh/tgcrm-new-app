@@ -379,7 +379,7 @@ const MemberList = () => {
       const deleteMember = {
         documentId: record_id,
       }; // eslint-disable-next-line
-      const response = await fetch(`https://tgcrm.vercel.app/delete-member`, {
+      const response = await fetch(`https://tgcrm-new-api.vercel.app//delete-member`, {
         method: "POST",
         body: JSON.stringify(deleteMember),
         headers: {
