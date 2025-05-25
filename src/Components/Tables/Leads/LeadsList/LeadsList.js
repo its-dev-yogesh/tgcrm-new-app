@@ -731,7 +731,7 @@ const LeadsList = () => {
     { value: "other", label: "Other" },
   ];
 
-  const options = new_members.map((item) => ({
+  const options = Users.map((item) => ({
     value: item.full_name,
     label: item.full_name,
   }));
@@ -1882,7 +1882,7 @@ const LeadsList = () => {
                       );
                     }}>
                     <option value="">Select </option>
-                    {new_members.map((record) => (
+                    {Users.map((record) => (
                       <option
                         value={`${record._id}-${record.full_name}-${record.email}`}>
                         {record.full_name}
