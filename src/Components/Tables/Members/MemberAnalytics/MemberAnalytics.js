@@ -65,6 +65,8 @@ const MemberAnalytics = () => {
       setUsers(memberData);
     }
   }, [getMember]);
+
+
   const new_members = [
     {
       _id: "64a40a81d2630f58958528f5",
@@ -458,7 +460,7 @@ const MemberAnalytics = () => {
     setcreate_date_object(date);
     console.log("date Created", dateString);
   };
-  const options = new_members.map((item) => ({
+  const options = Users.map((item) => ({
     value: item.full_name,
     label: item.full_name,
   }));
